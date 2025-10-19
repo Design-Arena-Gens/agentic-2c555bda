@@ -1,0 +1,41 @@
+:root {
+  --page-gradient: radial-gradient(circle at top left, #111b3b 0%, #090f20 35%, #050812 100%);
+  --fg-primary: #f8fafc;
+  --fg-soft: rgba(226, 232, 255, 0.85);
+  --fg-muted: rgba(148, 163, 227, 0.7);
+  --talent-sunrise: #fbbf24;
+  --talent-breeze: #38bdf8;
+  --talent-twilight: #c084fc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  color: var(--fg-primary);
+  background: var(--page-gradient);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.35);
+  color: var(--fg-primary);
+}
